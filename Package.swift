@@ -8,9 +8,9 @@ let package = Package(
         .library(name: "Gdk", targets: ["Gdk"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/rhx/CGdk.git", .branch("master")),
-        .package(url: "https://github.com/rhx/SwiftGdkPixbuf.git", .branch("master")),
-        .package(url: "https://github.com/rhx/SwiftPangoCairo.git", .branch("master")),
+        .package(url: "https://github.com/Brett-Best/CGdk.git", .branch("bb-pkg-dev")),
+        .package(url: "https://github.com/Brett-Best/SwiftGdkPixbuf.git", .branch("bb-pkg-dev")),
+        .package(url: "https://github.com/Brett-Best/SwiftPangoCairo.git", .branch("bb-pkg-dev")),
     ],
     targets: [
         .target(name: "Gdk", dependencies: ["GdkPixbuf", "PangoCairo"]),
